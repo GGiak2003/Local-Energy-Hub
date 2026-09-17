@@ -1,4 +1,6 @@
-/* GLOBAL RESET */
+/* --------------------------------------------------
+   GLOBAL RESET & BASE
+-------------------------------------------------- */
 * {
     box-sizing: border-box;
 }
@@ -6,22 +8,28 @@
 html, body {
     margin: 0;
     padding: 0;
+    height: 100%; /* Needed for sticky footer */
 }
 
 body {
     font-family: Arial, sans-serif;
     background: #fff;
     color: #333;
+
+    display: flex;
+    flex-direction: column; /* Enables sticky footer */
 }
 
-/* HEADER */
-#homepageHeader {
+/* --------------------------------------------------
+   SHARED HEADER (Homepage + About)
+-------------------------------------------------- */
+header {
     width: 100%;
     background-color: #2C5EAD;
     color: white;
 }
 
-/* TOP BAR */
+/* Top Bar */
 .headerTopBar {
     background-color: #1591DC;
     display: flex;
@@ -31,7 +39,9 @@ body {
     width: 100%;
 }
 
-#socialIcons {
+/* Social Icons */
+#socialIcons,
+#aboutSocialIcons {
     display: flex;
     gap: 10px;
 }
@@ -48,45 +58,64 @@ body {
     transform: scale(1.2);
 }
 
-/* NAVIGATION */
-#homepageNavigationMenu {
+/* Navigation */
+#homepageNavigationMenu,
+#aboutNavigationMenu {
     display: flex;
     gap: 20px;
 }
 
-#homepageNavigationMenu a {
+#homepageNavigationMenu a,
+#aboutNavigationMenu a {
     color: white;
     text-decoration: none;
     font-weight: 500;
 }
 
-#homepageNavigationMenu a:hover {
+#homepageNavigationMenu a:hover,
+#aboutNavigationMenu a:hover {
     text-decoration: underline;
     color: #C4E2F5;
 }
 
-/* HEADER CONTENT */
+/* ACTIVE NAV ITEM */
+#homepageNavigationMenu a.navActive,
+#aboutNavigationMenu a.navActive {
+    text-decoration: underline;
+    color: #C4E2F5;
+}
+
+
+/* Header Content */
 .headerContent {
     padding: 30px 20px;
 }
 
-#homepageTitle {
+#homepageTitle,
+#aboutTitle {
     margin: 0;
     font-size: 2.4em;
 }
 
-#homepageSubtitle {
+#homepageSubtitle,
+#aboutSubtitle {
     margin-top: 10px;
     font-size: 1.2em;
 }
 
-/* MAIN */
+/* --------------------------------------------------
+   MAIN CONTENT (Shared)
+-------------------------------------------------- */
 main {
+    flex: 1; /* Pushes footer down */
     max-width: 900px;
     margin: 40px auto;
     padding: 0 20px;
 }
 
+/* --------------------------------------------------
+   HOMEPAGE SECTIONS
+-------------------------------------------------- */
 #homepageWelcome {
     text-align: center;
     margin-bottom: 20px;
@@ -101,6 +130,7 @@ main {
     text-align: center;
 }
 
+/* Buttons */
 button {
     background-color: #1591DC;
     color: white;
@@ -118,14 +148,39 @@ button:hover {
     border: 1px solid #1591DC;
 }
 
-/* FOOTER */
-#homepageFooter {
+/* --------------------------------------------------
+   ABOUT PAGE SECTIONS
+-------------------------------------------------- */
+#aboutSectionIntro,
+#aboutSectionMission,
+#aboutSectionTeam {
+    margin-bottom: 40px;
+}
+
+#aboutWelcome,
+#aboutMissionTitle,
+#aboutTeamTitle {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#aboutDescription,
+#aboutMissionText,
+#aboutTeamText {
+    text-align: center;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* --------------------------------------------------
+   FOOTER (Shared)
+-------------------------------------------------- */
+footer {
     background-color: #2C5EAD;
     color: white;
     text-align: center;
     padding: 20px;
     width: 100%;
     margin-top: 40px;
-    position: absolute;
-    bottom: 0;
 }
