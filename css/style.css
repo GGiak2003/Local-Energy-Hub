@@ -41,7 +41,9 @@ header {
 
 /* Social Icons */
 #socialIcons,
-#aboutSocialIcons {
+#aboutSocialIcons,
+#dashboardSocialIcons,
+#forecastSocialIcons {
     display: flex;
     gap: 10px;
 }
@@ -60,27 +62,35 @@ header {
 
 /* Navigation */
 #homepageNavigationMenu,
-#aboutNavigationMenu {
+#aboutNavigationMenu,
+#dashboardNavigationMenu,
+#forecastNavMenu {
     display: flex;
     gap: 20px;
 }
 
 #homepageNavigationMenu a,
-#aboutNavigationMenu a {
+#aboutNavigationMenu a,
+#dashboardNavigationMenu a,
+#forecastNavigationMenu a {
     color: white;
     text-decoration: none;
     font-weight: 500;
 }
 
 #homepageNavigationMenu a:hover,
-#aboutNavigationMenu a:hover {
+#aboutNavigationMenu a:hover,
+#dashboardNavigationMenu a:hover,
+#forecastNavigationMenu a:hover {
     text-decoration: underline;
     color: #C4E2F5;
 }
 
 /* ACTIVE NAV ITEM */
 #homepageNavigationMenu a.navActive,
-#aboutNavigationMenu a.navActive {
+#aboutNavigationMenu a.navActive,
+#dashboardNavigationMenu a.navActive,
+#forecastNavigationMenu a.navActive {
     text-decoration: underline;
     color: #C4E2F5;
 }
@@ -92,7 +102,9 @@ header {
 }
 
 #homepageTitle,
-#aboutTitle {
+#aboutTitle,
+#dashboardTitle,
+#forecastTitle {
     margin: 0;
     font-size: 2.4em;
 }
@@ -172,6 +184,18 @@ button:hover {
     max-width: 800px;
     margin: 0 auto;
 }
+
+/* --------------------------------------------------
+   DASHBOARD PAGE SECTIONS
+-------------------------------------------------- */
+
+
+
+/* --------------------------------------------------
+   FORECAST PAGE SECTIONS
+-------------------------------------------------- */
+
+
 
 /* --------------------------------------------------
    FOOTER (Shared)
