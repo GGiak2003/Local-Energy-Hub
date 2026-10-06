@@ -64,7 +64,7 @@ header {
 #homepageNavigationMenu,
 #aboutNavigationMenu,
 #dashboardNavigationMenu,
-#forecastNavMenu {
+#forecastNavigationMenu {
     display: flex;
     gap: 20px;
 }
@@ -185,6 +185,20 @@ button:hover {
     margin: 0 auto;
 }
 
+/* About Image */
+#aboutSectionImage img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#aboutImage {
+  width: 100%;
+  height: 600px;
+  display: block;
+}
+
+
 /* --------------------------------------------------
    DASHBOARD PAGE SECTIONS
 -------------------------------------------------- */
@@ -207,4 +221,11 @@ footer {
     padding: 20px;
     width: 100%;
     margin-top: 40px;
+}
+
+/* --------------------------------------------------
+   SPACER
+-------------------------------------------------- */
+#spacer-lg {
+    height: 40px;
 }
