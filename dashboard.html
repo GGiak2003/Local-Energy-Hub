@@ -1,41 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Dashboard - Local Energy Hub</title>
-        <link rel="stylesheet" href="css/style.css"> 
-    </head>
 
-    <body>
-        <header id="dashboardHeader">
-            
-            <div class="headerTopBar">
-                <div id="dashboardSocialIcons">
-                    <img class="socialIcon" src="images/icons/facebook.svg" alt="facebook">
-                    <img class="socialIcon" src="images/icons/instagram.svg" alt="instagram">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard - Local Energy Hub</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <div class="header-top-bar">
+
+            <div class="social-icons">
+                <img
+                    class="social-icon"
+                    src="images/icons/facebook.svg"
+                    alt="Facebook"
+                >
+
+                <img
+                    class="social-icon"
+                    src="images/icons/instagram.svg"
+                    alt="Instagram"
+                >
+            </div>
+
+            <nav class="navigation-menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="dashboard.html" class="nav-active">Dashboard</a>
+                <a href="forecast.html">Forecast</a>
+            </nav>
+
+        </div>
+
+        <div class="header-content">
+
+            <h1 class="page-title">
+                Dashboard
+            </h1>
+
+            <p class="page-subtitle">
+                Monitor local energy consumption and renewable
+                energy generation.
+            </p>
+
+        </div>
+
+    </header>
+
+    <main class="main-content">
+
+        <section class="dashboard-section">
+
+            <h2 class="section-title">
+                Today's Energy Overview
+            </h2>
+
+            <p class="section-text">
+                A summary of today's local energy consumption
+                and renewable energy generation.
+            </p>
+
+            <div class="energy-cards">
+
+                <article class="energy-card">
+
+                    <h3 class="energy-card-title">
+                        Energy Used
+                    </h3>
+
+                    <p class="energy-value">
+                        24.8 kWh
+                    </p>
+
+                    <p class="energy-label">
+                        Total consumption
+                    </p>
+
+                </article>
+
+
+                <article class="energy-card">
+
+                    <h3 class="energy-card-title">
+                        Renewable Generated
+                    </h3>
+
+                    <p class="energy-value">
+                        15.4 kWh
+                    </p>
+
+                    <p class="energy-label">
+                        Renewable production
+                    </p>
+
+                </article>
+
+
+                <article class="energy-card">
+
+                    <h3 class="energy-card-title">
+                        Renewable Share
+                    </h3>
+
+                    <p class="energy-value">
+                        62%
+                    </p>
+
+                    <p class="energy-label">
+                        Of energy consumption
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="dashboard-section">
+
+            <h2 class="section-title">
+                Energy Insight
+            </h2>
+
+            <div class="energy-insight">
+
+                <h3>
+                    Renewable Energy Performance
+                </h3>
+
+                <p>
+                    Renewable generation currently represents
+                    62% of today's energy consumption.
+                </p>
+
+                <div class="progress-bar">
+
+                    <div
+                        class="progress-bar-fill"
+                        style="width: 62%;"
+                    ></div>
+
                 </div>
 
-                <nav id="dashboardNavigationMenu">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="dashboard.html" class="navActive">Dashboard</a>
-                    <a href="forecast.html">Forecast</a>
-                </nav>
+                <p class="progress-label">
+                    62% renewable
+                </p>
+
             </div>
 
-            <div class="headerContent">
-                <h1 id="dashboardTitle">Dashboard</h1>
+        </section>
+
+
+        <!-- UPCOMING CHART AREA -->
+        <section class="dashboard-section">
+
+            <h2 class="section-title">
+                Energy Throughout the Day
+            </h2>
+
+            <p class="section-text">
+                Energy consumption and renewable generation
+                throughout the day will be displayed here.
+            </p>
+
+            <div class="chart-placeholder">
+
+                <p>
+                    Energy chart coming next
+                </p>
+
             </div>
 
-        </header>
+        </section>
 
-        <main>
+    </main>
 
-        </main>
+    <footer class="site-footer">
 
-        <footer id="dashboardFooter">
-            <p>&copy; 2030 Local Energy Hub. All rights reserved.</p>
-        </footer>
-        
-    </body>
+        <p>
+            &copy; 2030 Local Energy Hub.
+            All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+
 </html>

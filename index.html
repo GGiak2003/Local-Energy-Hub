@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Local Energy Hub</title>
@@ -8,54 +9,84 @@
 
 <body>
 
-<header id="homepageHeader">
+    <header class="site-header">
 
-    <div class="headerTopBar">
-        <div id="socialIcons">
-            <img class="socialIcon" src="images/icons/facebook.svg" alt="facebook">
-            <img class="socialIcon" src="images/icons/instagram.svg" alt="instagram">
+        <div class="header-top-bar">
+
+            <div class="social-icons">
+                <img
+                    class="social-icon"
+                    src="images/icons/facebook.svg"
+                    alt="Facebook"
+                >
+
+                <img
+                    class="social-icon"
+                    src="images/icons/instagram.svg"
+                    alt="Instagram"
+                >
+            </div>
+
+            <nav class="navigation-menu">
+                <a href="index.html" class="nav-active">Home</a>
+                <a href="about.html">About</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="forecast.html">Forecast</a>
+            </nav>
+
         </div>
 
-        <nav id="homepageNavigationMenu">
-            <a href="index.html" class="navActive">Home</a>
-            <a href="about.html">About</a>
-            <a href="dashboard.html">Dashboard</a>
-            <a href="forecast.html">Forecast</a>
-        </nav>
-    </div>
+        <div class="header-content">
+            <h1 class="page-title">
+                ⚡ Local Energy Hub
+            </h1>
 
-    <div class="headerContent">
-        <h1 id="homepageTitle">⚡ Local Energy Hub</h1>
-        <p id="homepageSubtitle">
-            Supporting renewable energy management and forecasting for local communities.
-        </p>
-    </div>
+            <p class="page-subtitle">
+                Supporting renewable energy management and forecasting
+                for local communities.
+            </p>
+        </div>
 
-</header>
+    </header>
 
-<main>
 
-    <section id="homepageWrapperOne">
-        <h2 id="homepageWelcome">Welcome to the Local Energy Hub!</h2>
+    <main class="main-content">
 
-        <p id="homepageMissionStatement">
-            The hub for smart energy management and forecasting in your local community.
-            Explore our dashboard to monitor energy usage, access renewable energy forecasts,
-            and make informed decisions for a sustainable future.
-        </p>
-    </section>
+        <section class="content-section">
 
-    <div id="homepageButtonWrapper">
-        <button id="homepageDashboardButton" onclick="location.href='dashboard.html'">
-            Go to Dashboard
-        </button>
-    </div>
+            <h2 class="section-title">
+                Welcome to the Local Energy Hub!
+            </h2>
 
-</main>
+            <p class="section-text">
+                The hub for smart energy management and forecasting
+                in your local community. Explore our dashboard to
+                monitor energy usage, access renewable energy forecasts,
+                and make informed decisions for a sustainable future.
+            </p>
 
-<footer id="homepageFooter">
-    <p>&copy; 2030 Local Energy Hub. All rights reserved.</p>
-</footer>
+        </section>
+
+
+        <div class="home-button-wrapper">
+
+            <button
+                class="button"
+                type="button"
+                onclick="location.href='dashboard.html'"
+            >
+                Go to Dashboard
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <footer class="site-footer">
+        <p>&copy; 2030 Local Energy Hub. All rights reserved.</p>
+    </footer>
 
 </body>
+
 </html>

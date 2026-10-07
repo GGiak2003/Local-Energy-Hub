@@ -1,14 +1,16 @@
 /* --------------------------------------------------
    GLOBAL RESET & BASE
 -------------------------------------------------- */
+
 * {
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
-    height: 100%; /* Needed for sticky footer */
+    height: 100%;
 }
 
 body {
@@ -17,215 +19,358 @@ body {
     color: #333;
 
     display: flex;
-    flex-direction: column; /* Enables sticky footer */
+    flex-direction: column;
 }
 
+
 /* --------------------------------------------------
-   SHARED HEADER (Homepage + About)
+   HEADER
 -------------------------------------------------- */
-header {
+
+.site-header {
     width: 100%;
     background-color: #2C5EAD;
     color: white;
 }
 
+
 /* Top Bar */
-.headerTopBar {
+
+.header-top-bar {
     background-color: #1591DC;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     padding: 12px 20px;
     width: 100%;
 }
 
+
 /* Social Icons */
-#socialIcons,
-#aboutSocialIcons,
-#dashboardSocialIcons,
-#forecastSocialIcons {
+
+.social-icons {
     display: flex;
     gap: 10px;
 }
 
-.socialIcon {
+.social-icon {
     width: 30px;
     height: 30px;
     padding: 5px;
+
     cursor: pointer;
+
     transition: transform 0.3s ease;
 }
 
-.socialIcon:hover {
+.social-icon:hover {
     transform: scale(1.2);
 }
 
+
 /* Navigation */
-#homepageNavigationMenu,
-#aboutNavigationMenu,
-#dashboardNavigationMenu,
-#forecastNavigationMenu {
+
+.navigation-menu {
     display: flex;
     gap: 20px;
 }
 
-#homepageNavigationMenu a,
-#aboutNavigationMenu a,
-#dashboardNavigationMenu a,
-#forecastNavigationMenu a {
+.navigation-menu a {
     color: white;
+
     text-decoration: none;
     font-weight: 500;
 }
 
-#homepageNavigationMenu a:hover,
-#aboutNavigationMenu a:hover,
-#dashboardNavigationMenu a:hover,
-#forecastNavigationMenu a:hover {
-    text-decoration: underline;
+.navigation-menu a:hover,
+.navigation-menu a.nav-active {
     color: #C4E2F5;
-}
 
-/* ACTIVE NAV ITEM */
-#homepageNavigationMenu a.navActive,
-#aboutNavigationMenu a.navActive,
-#dashboardNavigationMenu a.navActive,
-#forecastNavigationMenu a.navActive {
     text-decoration: underline;
-    color: #C4E2F5;
 }
 
 
 /* Header Content */
-.headerContent {
+
+.header-content {
     padding: 30px 20px;
 }
 
-#homepageTitle,
-#aboutTitle,
-#dashboardTitle,
-#forecastTitle {
+.page-title {
     margin: 0;
     font-size: 2.4em;
 }
 
-#homepageSubtitle,
-#aboutSubtitle {
+.page-subtitle {
     margin-top: 10px;
+    margin-bottom: 0;
+
     font-size: 1.2em;
 }
 
+
 /* --------------------------------------------------
-   MAIN CONTENT (Shared)
+   MAIN CONTENT
 -------------------------------------------------- */
-main {
-    flex: 1; /* Pushes footer down */
+
+.main-content {
+    flex: 1;
+
+    width: 100%;
     max-width: 900px;
+
     margin: 40px auto;
     padding: 0 20px;
 }
 
-/* --------------------------------------------------
-   HOMEPAGE SECTIONS
--------------------------------------------------- */
-#homepageWelcome {
-    text-align: center;
-    margin-bottom: 20px;
-}
 
-#homepageMissionStatement {
-    text-align: center;
+/* --------------------------------------------------
+   SHARED SECTIONS
+-------------------------------------------------- */
+
+.content-section {
     margin-bottom: 40px;
 }
 
-#homepageButtonWrapper {
+.section-title {
+    margin-bottom: 20px;
+
     text-align: center;
 }
 
-/* Buttons */
-button {
+.section-text {
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    text-align: center;
+    line-height: 1.6;
+}
+
+
+/* --------------------------------------------------
+   BUTTONS
+-------------------------------------------------- */
+
+.button {
     background-color: #1591DC;
     color: white;
+
     border: none;
-    padding: 12px 24px;
     border-radius: 10px;
+
+    padding: 12px 24px;
+
     cursor: pointer;
     font-size: 1em;
+
     transition: 0.2s ease;
 }
 
-button:hover {
+.button:hover {
     background-color: #C4E2F5;
     color: black;
+
     border: 1px solid #1591DC;
 }
 
+
 /* --------------------------------------------------
-   ABOUT PAGE SECTIONS
+   HOMEPAGE
 -------------------------------------------------- */
-#aboutSectionIntro,
-#aboutSectionMission,
-#aboutSectionTeam {
-    margin-bottom: 40px;
-}
 
-#aboutWelcome,
-#aboutMissionTitle,
-#aboutTeamTitle {
+.home-button-wrapper {
     text-align: center;
-    margin-bottom: 20px;
 }
 
-#aboutDescription,
-#aboutMissionText,
-#aboutTeamText {
-    text-align: center;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
-}
 
-/* About Image */
-#aboutSectionImage img {
+/* --------------------------------------------------
+   ABOUT PAGE
+-------------------------------------------------- */
+
+.about-image-section img {
     width: 100%;
+
     margin: 0;
     padding: 0;
 }
 
-#aboutImage {
-  width: 100%;
-  height: 600px;
-  display: block;
+.about-image {
+    width: 100%;
+    height: 600px;
+
+    display: block;
+    object-fit: cover;
 }
 
 
 /* --------------------------------------------------
-   DASHBOARD PAGE SECTIONS
+   DASHBOARD PAGE
 -------------------------------------------------- */
 
+.dashboard-section {
+    margin-bottom: 50px;
+}
+
+
+/* Energy Cards */
+
+.energy-cards {
+    display: flex;
+    gap: 20px;
+
+    margin-top: 30px;
+}
+
+.energy-card {
+    flex: 1;
+
+    padding: 20px;
+
+    background-color: #F5F9FC;
+
+    border: 1px solid #C4E2F5;
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.energy-card-title {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.energy-value {
+    margin: 0;
+
+    color: #2C5EAD;
+
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.energy-label {
+    margin-top: 10px;
+    margin-bottom: 0;
+
+    color: #666;
+}
+
+
+/* Energy Insight */
+
+.energy-insight {
+    max-width: 700px;
+
+    margin: 30px auto 0;
+    padding: 25px;
+
+    background-color: #F5F9FC;
+
+    border: 1px solid #C4E2F5;
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.energy-insight h3 {
+    margin-top: 0;
+
+    color: #2C5EAD;
+}
+
+.energy-insight p {
+    line-height: 1.6;
+}
+
+
+/* Progress Bar */
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+
+    margin-top: 20px;
+
+    background-color: #ddd;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    width: 62%;
+    height: 100%;
+
+    background-color: #1591DC;
+}
+
+.progress-label {
+    margin-bottom: 0;
+
+    font-weight: bold;
+}
+
+
+/* Chart */
+
+.chart-placeholder {
+    min-height: 250px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 30px;
+
+    background-color: #F5F9FC;
+
+    border: 2px dashed #C4E2F5;
+    border-radius: 10px;
+
+    color: #666;
+}
+
+.chart-placeholder p {
+    margin: 0;
+}
 
 
 /* --------------------------------------------------
-   FORECAST PAGE SECTIONS
+   FORECAST PAGE
 -------------------------------------------------- */
 
+/* Forecast styles will go here later. */
 
 
 /* --------------------------------------------------
-   FOOTER (Shared)
+   FOOTER
 -------------------------------------------------- */
-footer {
+
+.site-footer {
+    width: 100%;
+
+    margin-top: 40px;
+    padding: 20px;
+
     background-color: #2C5EAD;
     color: white;
+
     text-align: center;
-    padding: 20px;
-    width: 100%;
-    margin-top: 40px;
 }
+
+.site-footer p {
+    margin: 0;
+}
+
 
 /* --------------------------------------------------
    SPACER
 -------------------------------------------------- */
-#spacer-lg {
+
+.spacer-lg {
     height: 40px;
 }
