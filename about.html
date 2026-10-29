@@ -3,130 +3,152 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Local Energy Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
     <header class="site-header">
-
-        <div class="header-top-bar">
-
-            <div class="social-icons">
-                <img
-                    class="social-icon"
-                    src="images/icons/facebook.svg"
-                    alt="Facebook"
-                >
-
-                <img
-                    class="social-icon"
-                    src="images/icons/instagram.svg"
-                    alt="Instagram"
-                >
-            </div>
-
+        <div class="container header-top-bar">
+            <a class="brand" href="index.html">
+                <span class="brand-mark"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg></span>
+                Local Energy Hub
+            </a>
             <nav class="navigation-menu">
-                <a href="index.html">Home</a>
-                <a href="about.html" class="nav-active">About</a>
-                <a href="dashboard.html">Dashboard</a>
-                <a href="forecast.html">Forecast</a>
+                    <a href="index.html">Home</a>
+                    <a href="about.html" class="nav-active">About</a>
+                    <a href="dashboard.html">Dashboard</a>
+                    <a href="forecast.html">Forecast</a>
             </nav>
-
+            <div class="social-icons">
+                    <img class="social-icon" src="images/icons/facebook.svg" alt="Facebook">
+                    <img class="social-icon" src="images/icons/instagram.svg" alt="Instagram">
+                </div>
         </div>
-
-        <div class="header-content">
-
-            <h1 class="page-title">
-                About Local Energy Hub
-            </h1>
-
-            <p class="page-subtitle">
-                Learn more about our mission, our team, and our
-                commitment to sustainable energy.
-            </p>
-
-        </div>
-
     </header>
 
-
-    <section class="about-image-section">
-
-        <img
-            class="about-image"
-            src="images/photos/solar-panels.jpg"
-            alt="Solar panels"
-        >
-
+    <section class="hero" style="background-image: url('images/photos/solar-panels-web.jpg');">
+        <div class="container">
+            <p class="eyebrow">About us</p>
+            <h1 class="page-title">About Local Energy Hub</h1>
+            <p class="page-subtitle">
+                Learn more about our mission, our team, and our commitment to sustainable energy.
+            </p>
+        </div>
     </section>
 
-
     <main class="main-content">
-
         <section class="content-section">
-
-            <h2 class="section-title">
-                Who We Are
-            </h2>
-
-            <p class="section-text">
-                Local Energy Hub is a community-focused initiative
-                dedicated to improving renewable energy awareness,
-                accessibility, and forecasting. Our goal is to empower
-                households, businesses, and local organizations with
-                clear, actionable energy insights.
-            </p>
-
+            <div class="container split">
+                <div>
+                    <p class="eyebrow">Who we are</p>
+                    <h2 class="section-title">Who We Are</h2>
+                    <p class="section-text">
+                        Local Energy Hub is a community-focused initiative
+                        dedicated to improving renewable energy awareness,
+                        accessibility, and forecasting. Our goal is to empower
+                        households, businesses, and local organizations with
+                        clear, actionable energy insights.
+                    </p>
+                </div>
+                <div class="split-media">
+                    <img src="https://images.unsplash.com/photo-1762960504300-1bcbdd8d9e53?auto=format&fit=crop&w=1200&q=80" alt="Solar panels on a rooftop surrounded by trees">
+                </div>
+            </div>
         </section>
 
-
-        <div class="spacer-lg"></div>
-
-
-        <section class="content-section">
-
-            <h2 class="section-title">
-                Our Mission
-            </h2>
-
-            <p class="section-text">
-                We believe that sustainable energy should be
-                understandable and accessible to everyone. Through
-                real-time dashboards, forecasting tools, and educational
-                resources, we help communities make informed decisions
-                that reduce environmental impact and improve energy
-                efficiency.
-            </p>
-
+        <section class="band">
+            <div class="container mission-quote">
+                <p class="eyebrow">Our mission</p>
+                <blockquote>
+                    &ldquo;We believe that sustainable energy should be
+                    <em>understandable and accessible</em> to everyone.&rdquo;
+                </blockquote>
+                <p class="section-text">
+                    Through real-time dashboards, forecasting tools, and educational
+                    resources, we help communities make informed decisions
+                    that reduce environmental impact and improve energy
+                    efficiency.
+                </p>
+                <div class="values">
+                    <div class="value">
+                        <span class="icon-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20h18M6 16v-5M11 16V7M16 16v-8M21 16v-3"/></svg></span>
+                        <h3>Real-time dashboards</h3>
+                        <p>See how much energy is used and generated, at a glance.</p>
+                    </div>
+                    <div class="value">
+                        <span class="icon-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></span>
+                        <h3>Forecasting tools</h3>
+                        <p>Know when renewable production will be high or low.</p>
+                    </div>
+                    <div class="value">
+                        <span class="icon-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 20A7 7 0 0 1 4 13c0-6 6-9 16-9 0 10-3 16-9 16Z"/><path d="M4 20c4-6 8-9 12-11"/></svg></span>
+                        <h3>Educational resources</h3>
+                        <p>Simple tips to make greener energy choices.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-
-        <div class="spacer-lg"></div>
-
-
         <section class="content-section">
-
-            <h2 class="section-title">
-                Our Team
-            </h2>
-
-            <p class="section-text">
-                Our team consists of engineers, data scientists, and
-                sustainability advocates who work together to build
-                reliable tools for energy monitoring and prediction.
-                We collaborate with local partners to ensure our
-                solutions meet real community needs.
-            </p>
-
+            <div class="container split reverse">
+                <div>
+                    <p class="eyebrow">The people</p>
+                    <h2 class="section-title">Our Team</h2>
+                    <p class="section-text">
+                        Our team consists of engineers, data scientists, and
+                        sustainability advocates who work together to build
+                        reliable tools for energy monitoring and prediction.
+                        We collaborate with local partners to ensure our
+                        solutions meet real community needs.
+                    </p>
+                    <ul class="team-roles">
+                        <li>Engineers</li>
+                        <li>Data scientists</li>
+                        <li>Sustainability advocates</li>
+                        <li>Local partners</li>
+                    </ul>
+                </div>
+                <div class="split-media">
+                    <img src="https://images.unsplash.com/photo-1757859479100-b3014da01a2d?auto=format&fit=crop&w=1200&q=80" alt="Tree-lined path through fields with wind turbines">
+                </div>
+            </div>
         </section>
-
     </main>
 
-
     <footer class="site-footer">
-        <p>&copy; 2030 Local Energy Hub. All rights reserved.</p>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a class="brand" href="index.html">
+                        <span class="brand-mark"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg></span>
+                        Local Energy Hub
+                    </a>
+                    <p class="footer-tagline">
+                        Supporting renewable energy management and forecasting
+                        for local communities.
+                    </p>
+                </div>
+                <nav class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="dashboard.html">Dashboard</a>
+                    <a href="forecast.html">Forecast</a>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2030 Local Energy Hub. All rights reserved.</p>
+                <div class="social-icons">
+                    <img class="social-icon" src="images/icons/facebook.svg" alt="Facebook">
+                    <img class="social-icon" src="images/icons/instagram.svg" alt="Instagram">
+                </div>
+            </div>
+        </div>
     </footer>
 
 </body>
