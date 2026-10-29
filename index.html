@@ -5,146 +5,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Local Energy Hub</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header class="site-header">
-        <div class="container header-top-bar">
-            <a class="brand" href="index.html">
-                <span class="brand-mark"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg></span>
-                Local Energy Hub
-            </a>
-            <nav class="navigation-menu">
-                    <a href="index.html" class="nav-active">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="dashboard.html">Dashboard</a>
-                    <a href="forecast.html">Forecast</a>
-            </nav>
+    <header class="site-header header-home">
+
+        <div class="header-top-bar">
+
             <div class="social-icons">
-                    <img class="social-icon" src="images/icons/facebook.svg" alt="Facebook">
-                    <img class="social-icon" src="images/icons/instagram.svg" alt="Instagram">
-                </div>
+                <img
+                    class="social-icon"
+                    src="images/icons/facebook.svg"
+                    alt="Facebook"
+                >
+
+                <img
+                    class="social-icon"
+                    src="images/icons/instagram.svg"
+                    alt="Instagram"
+                >
+            </div>
+
+            <nav class="navigation-menu">
+                <a href="index.html" class="nav-active">Home</a>
+                <a href="about.html">About</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="forecast.html">Forecast</a>
+            </nav>
+
         </div>
+
+        <div class="header-content">
+            <h1 class="page-title">
+                ⚡ Local Energy Hub
+            </h1>
+
+            <p class="page-subtitle">
+                Supporting renewable energy management and forecasting
+                for local communities.
+            </p>
+        </div>
+
     </header>
 
-    <section class="hero hero-home" style="background-image: url('https://images.unsplash.com/photo-1767627616133-8486af8da288?auto=format&fit=crop&w=1800&q=80');">
-        <div class="container">
-            <p class="eyebrow">Community energy platform</p>
-            <h1 class="page-title">Clean energy, <em>made local.</em></h1>
-            <p class="page-subtitle">
-                Supporting renewable energy management and forecasting for local communities.
-            </p>
-            <div class="hero-actions">
-                <a class="button" href="dashboard.html">Go to Dashboard <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-                <a class="button button-ghost" href="forecast.html">See the forecast</a>
-            </div>
-        </div>
-        <p class="photo-credit">Photo: Đào Việt Hoàng / Unsplash</p>
-    </section>
 
     <main class="main-content">
-        <div class="container">
-            <div class="stat-strip">
-                <div class="stat">
-                    <p class="stat-value">24.8 <small>kWh</small></p>
-                    <p class="stat-label">Energy used today</p>
-                </div>
-                <div class="stat">
-                    <p class="stat-value">15.4 <small>kWh</small></p>
-                    <p class="stat-label">Renewable generated today</p>
-                </div>
-                <div class="stat">
-                    <p class="stat-value">62<small>%</small></p>
-                    <p class="stat-label">Renewable share</p>
-                </div>
-            </div>
+
+        <section class="content-section">
+
+            <h2 class="section-title">
+                Welcome to the Local Energy Hub!
+            </h2>
+
+            <p class="section-text">
+                The hub for smart energy management and forecasting
+                in your local community. Explore our dashboard to
+                monitor energy usage, access renewable energy forecasts,
+                and make informed decisions for a sustainable future.
+            </p>
+
+        </section>
+
+
+        <section class="photo-row">
+
+            <figure class="photo-card">
+                <img
+                    src="images/photos/solar-panels-web.jpg"
+                    alt="Solar panels"
+                >
+                <figcaption>Solar energy</figcaption>
+            </figure>
+
+            <figure class="photo-card">
+                <img
+                    src="https://images.unsplash.com/photo-1602315458066-a6ca1638b96f?auto=format&fit=crop&w=800&q=80"
+                    alt="Wind turbines in a field"
+                >
+                <figcaption>Wind energy</figcaption>
+            </figure>
+
+            <figure class="photo-card">
+                <img
+                    src="https://images.unsplash.com/photo-1762960504300-1bcbdd8d9e53?auto=format&fit=crop&w=800&q=80"
+                    alt="Solar panels on a rooftop"
+                >
+                <figcaption>Local rooftops</figcaption>
+            </figure>
+
+        </section>
+
+
+        <div class="home-button-wrapper">
+
+            <button
+                class="button"
+                type="button"
+                onclick="location.href='dashboard.html'"
+            >
+                Go to Dashboard
+            </button>
+
         </div>
 
-        <section class="content-section">
-            <div class="container split">
-                <div>
-                    <p class="eyebrow">Welcome</p>
-                    <h2 class="section-title">Welcome to the Local Energy Hub!</h2>
-                    <p class="section-text">
-                        The hub for smart energy management and forecasting
-                        in your local community. Explore our dashboard to
-                        monitor energy usage, access renewable energy forecasts,
-                        and make informed decisions for a sustainable future.
-                    </p>
-                    <div class="home-button-wrapper">
-                        <a class="button" href="dashboard.html">Go to Dashboard <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-                    </div>
-                </div>
-                <div class="split-media">
-                    <img src="https://images.unsplash.com/photo-1762960504300-1bcbdd8d9e53?auto=format&fit=crop&w=1200&q=80" alt="Solar panels on a rooftop surrounded by trees">
-                    <div class="media-badge">
-                        <strong>62%</strong>
-                        <span>renewable today</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="content-section">
-            <div class="container">
-                <div class="section-head">
-                    <p class="eyebrow">Explore</p>
-                    <h2 class="section-title">Everything in one place</h2>
-                </div>
-                <div class="tiles">
-                    <a class="tile" href="dashboard.html" style="background-image: url('https://images.unsplash.com/photo-1602315458066-a6ca1638b96f?auto=format&fit=crop&w=900&q=80');">
-                        <span class="tile-number">01</span>
-                        <h3>Dashboard</h3>
-                        <p>Monitor local energy consumption and renewable generation.</p>
-                    </a>
-                    <a class="tile" href="forecast.html" style="background-image: url('https://images.unsplash.com/photo-1780047053902-9bcf0f8af9fb?auto=format&fit=crop&w=900&q=80');">
-                        <span class="tile-number">02</span>
-                        <h3>Forecast</h3>
-                        <p>View expected renewable energy generation for the coming days.</p>
-                    </a>
-                    <a class="tile" href="about.html" style="background-image: url('images/photos/solar-panels-web.jpg');">
-                        <span class="tile-number">03</span>
-                        <h3>About us</h3>
-                        <p>Learn more about our mission, our team, and our commitment to sustainable energy.</p>
-                    </a>
-                </div>
-            </div>
-        </section>
     </main>
 
+
     <footer class="site-footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div>
-                    <a class="brand" href="index.html">
-                        <span class="brand-mark"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg></span>
-                        Local Energy Hub
-                    </a>
-                    <p class="footer-tagline">
-                        Supporting renewable energy management and forecasting
-                        for local communities.
-                    </p>
-                </div>
-                <nav class="footer-links">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="dashboard.html">Dashboard</a>
-                    <a href="forecast.html">Forecast</a>
-                </nav>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2030 Local Energy Hub. All rights reserved.</p>
-                <div class="social-icons">
-                    <img class="social-icon" src="images/icons/facebook.svg" alt="Facebook">
-                    <img class="social-icon" src="images/icons/instagram.svg" alt="Instagram">
-                </div>
-            </div>
-        </div>
+        <p>&copy; 2030 Local Energy Hub. All rights reserved.</p>
     </footer>
 
 </body>
