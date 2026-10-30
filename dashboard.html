@@ -12,7 +12,7 @@
 
 <body>
 
-    <header class="site-header">
+    <header class="site-header header-dashboard">
 
         <div class="header-top-bar">
 
@@ -158,7 +158,7 @@
         </section>
 
 
-        <!-- UPCOMING CHART AREA -->
+        <!-- CHART AREA -->
         <section class="dashboard-section">
 
             <h2 class="section-title">
@@ -167,15 +167,80 @@
 
             <p class="section-text">
                 Energy consumption and renewable generation
-                throughout the day will be displayed here.
+                throughout the day (kWh).
             </p>
 
-            <div class="chart-placeholder">
+            <div class="chart">
 
-                <p>
-                    Energy chart coming next
-                </p>
+                <div class="chart-column">
+                    <div class="chart-bars">
+                        <div class="chart-bar bar-used" style="height: 20%;"></div>
+                        <div class="chart-bar bar-renewable" style="height: 4%;"></div>
+                    </div>
+                    <p class="chart-time">00:00</p>
+                </div>
 
+                <div class="chart-column">
+                    <div class="chart-bars">
+                        <div class="chart-bar bar-used" style="height: 20%;"></div>
+                        <div class="chart-bar bar-renewable" style="height: 4%;"></div>
+                    </div>
+                    <p class="chart-time">03:00</p>
+                </div>
+
+                <div class="chart-column">
+                    <div class="chart-bars">
+                        <div class="chart-bar bar-used" style="height: 36%;"></div>
+                        <div class="chart-bar bar-renewable" style="height: 16%;"></div>
+                    </div>
+                    <p class="chart-time">06:00</p>
+                </div>
+
+                <div class="chart-column">
+                    <div class="chart-bars">
+                        <div class="chart-bar bar-used" style="height: 48%;"></div>
+                        <div class="chart-bar bar-renewable" style="height: 48%;"></div>
+                    </div>
+                    <p class="chart-time">09:00</p>
+                </div>
+
+                <div class="chart-column">
+                    <div class="chart-bars">
+                        <div class="chart-bar bar-used" style="height: 40%;"></div>
+                        <div class="chart-bar bar-renewable" style="height: 88%;"></div>
+                    </div>
+                    <p class="chart-time">12:00</p>
+                </div>
+
+                <div class="chart-column">
+                    <div class="chart-bars">
+                        <div class="chart-bar bar-used" style="height: 40%;"></div>
+                        <div class="chart-bar bar-renewable" style="height: 64%;"></div>
+                    </div>
+                    <p class="chart-time">15:00</p>
+                </div>
+
+                <div class="chart-column">
+                    <div class="chart-bars">
+                        <div class="chart-bar bar-used" style="height: 80%;"></div>
+                        <div class="chart-bar bar-renewable" style="height: 20%;"></div>
+                    </div>
+                    <p class="chart-time">18:00</p>
+                </div>
+
+                <div class="chart-column">
+                    <div class="chart-bars">
+                        <div class="chart-bar bar-used" style="height: 56%;"></div>
+                        <div class="chart-bar bar-renewable" style="height: 4%;"></div>
+                    </div>
+                    <p class="chart-time">21:00</p>
+                </div>
+
+            </div>
+
+            <div class="chart-legend">
+                <span class="legend-used">Energy used</span>
+                <span class="legend-renewable">Renewable generated</span>
             </div>
 
         </section>

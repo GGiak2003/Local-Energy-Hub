@@ -15,7 +15,7 @@ body {
 
 body {
     font-family: Arial, sans-serif;
-    background: #fff;
+    background: #F5F9FC;
     color: #333;
 
     display: flex;
@@ -34,10 +34,45 @@ body {
 }
 
 
+/* Header Photos */
+
+.header-home,
+.header-about,
+.header-dashboard,
+.header-forecast {
+    background-size: cover;
+    background-position: center;
+}
+
+.header-home {
+    background-image:
+        linear-gradient(rgba(20, 50, 100, 0.55), rgba(20, 50, 100, 0.55)),
+        url("https://images.unsplash.com/photo-1767627616133-8486af8da288?auto=format&fit=crop&w=1800&q=80");
+}
+
+.header-about {
+    background-image:
+        linear-gradient(rgba(20, 50, 100, 0.55), rgba(20, 50, 100, 0.55)),
+        url("https://images.unsplash.com/photo-1762960504300-1bcbdd8d9e53?auto=format&fit=crop&w=1800&q=80");
+}
+
+.header-dashboard {
+    background-image:
+        linear-gradient(rgba(20, 50, 100, 0.55), rgba(20, 50, 100, 0.55)),
+        url("https://images.unsplash.com/photo-1602315458066-a6ca1638b96f?auto=format&fit=crop&w=1800&q=80");
+}
+
+.header-forecast {
+    background-image:
+        linear-gradient(rgba(20, 50, 100, 0.55), rgba(20, 50, 100, 0.55)),
+        url("https://images.unsplash.com/photo-1780047053902-9bcf0f8af9fb?auto=format&fit=crop&w=1800&q=80");
+}
+
+
 /* Top Bar */
 
 .header-top-bar {
-    background-color: #1591DC;
+    background-color: rgba(21, 145, 220, 0.85);
 
     display: flex;
     justify-content: space-between;
@@ -61,6 +96,8 @@ body {
     padding: 5px;
 
     cursor: pointer;
+
+    filter: invert(1);
 
     transition: transform 0.3s ease;
 }
@@ -94,12 +131,17 @@ body {
 /* Header Content */
 
 .header-content {
-    padding: 30px 20px;
+    max-width: 900px;
+
+    margin: 0 auto;
+    padding: 90px 20px;
+
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .page-title {
     margin: 0;
-    font-size: 2.4em;
+    font-size: 3em;
 }
 
 .page-subtitle {
@@ -154,10 +196,10 @@ body {
     background-color: #1591DC;
     color: white;
 
-    border: none;
-    border-radius: 10px;
+    border: 1px solid #1591DC;
+    border-radius: 25px;
 
-    padding: 12px 24px;
+    padding: 14px 32px;
 
     cursor: pointer;
     font-size: 1em;
@@ -182,6 +224,46 @@ body {
 }
 
 
+/* Photo Row */
+
+.photo-row {
+    display: flex;
+    gap: 20px;
+
+    margin-bottom: 40px;
+}
+
+.photo-card {
+    flex: 1;
+
+    margin: 0;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 4px 12px rgba(44, 94, 173, 0.12);
+}
+
+.photo-card img {
+    width: 100%;
+    height: 200px;
+
+    display: block;
+    object-fit: cover;
+}
+
+.photo-card figcaption {
+    padding: 12px;
+
+    text-align: center;
+    font-weight: bold;
+    color: #2C5EAD;
+}
+
+
 /* --------------------------------------------------
    ABOUT PAGE
 -------------------------------------------------- */
@@ -195,7 +277,7 @@ body {
 
 .about-image {
     width: 100%;
-    height: 600px;
+    height: 450px;
 
     display: block;
     object-fit: cover;
@@ -223,14 +305,23 @@ body {
 .energy-card {
     flex: 1;
 
-    padding: 20px;
+    padding: 25px 20px;
 
-    background-color: #F5F9FC;
+    background-color: white;
+
+    box-shadow: 0 4px 12px rgba(44, 94, 173, 0.12);
+
+    transition: transform 0.2s ease;
 
     border: 1px solid #C4E2F5;
     border-radius: 10px;
 
     text-align: center;
+}
+
+.energy-card:hover,
+.forecast-card:hover {
+    transform: translateY(-4px);
 }
 
 .energy-card-title {
@@ -263,7 +354,9 @@ body {
     margin: 30px auto 0;
     padding: 25px;
 
-    background-color: #F5F9FC;
+    background-color: white;
+
+    box-shadow: 0 4px 12px rgba(44, 94, 173, 0.12);
 
     border: 1px solid #C4E2F5;
     border-radius: 10px;
@@ -302,6 +395,8 @@ body {
     height: 100%;
 
     background-color: #1591DC;
+
+    border-radius: 10px;
 }
 
 .progress-label {
@@ -311,27 +406,96 @@ body {
 }
 
 
-/* Chart Placeholder */
+/* Chart */
 
-.chart-placeholder {
-    min-height: 250px;
+.chart {
+    height: 260px;
 
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+    gap: 10px;
 
     margin-top: 30px;
+    padding: 25px 20px 10px;
 
-    background-color: #F5F9FC;
+    background-color: white;
 
-    border: 2px dashed #C4E2F5;
     border-radius: 10px;
 
+    box-shadow: 0 4px 12px rgba(44, 94, 173, 0.12);
+}
+
+.chart-column {
+    flex: 1;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.chart-bars {
+    flex: 1;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 4px;
+}
+
+.chart-bar {
+    width: 40%;
+    max-width: 22px;
+
+    border-radius: 4px 4px 0 0;
+}
+
+.bar-used {
+    background-color: #2C5EAD;
+}
+
+.bar-renewable {
+    background-color: #5CC28A;
+}
+
+.chart-time {
+    margin: 8px 0 0;
+
+    text-align: center;
+    font-size: 0.8em;
     color: #666;
 }
 
-.chart-placeholder p {
-    margin: 0;
+.chart-legend {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    margin-top: 15px;
+
+    font-size: 0.9em;
+}
+
+.chart-legend span::before {
+    content: "";
+
+    display: inline-block;
+
+    width: 12px;
+    height: 12px;
+
+    margin-right: 6px;
+
+    border-radius: 3px;
+
+    vertical-align: middle;
+}
+
+.legend-used::before {
+    background-color: #2C5EAD;
+}
+
+.legend-renewable::before {
+    background-color: #5CC28A;
 }
 
 
@@ -356,9 +520,13 @@ body {
 .forecast-card {
     flex: 1;
 
-    padding: 20px;
+    padding: 25px 20px;
 
-    background-color: #F5F9FC;
+    background-color: white;
+
+    box-shadow: 0 4px 12px rgba(44, 94, 173, 0.12);
+
+    transition: transform 0.2s ease;
 
     border: 1px solid #C4E2F5;
     border-radius: 10px;
@@ -402,7 +570,9 @@ body {
     margin: 30px auto 0;
     padding: 25px;
 
-    background-color: #F5F9FC;
+    background-color: white;
+
+    box-shadow: 0 4px 12px rgba(44, 94, 173, 0.12);
 
     border: 1px solid #C4E2F5;
     border-radius: 10px;
@@ -438,7 +608,9 @@ body {
     margin: 30px auto 0;
     padding: 25px;
 
-    background-color: #F5F9FC;
+    background-color: white;
+
+    box-shadow: 0 4px 12px rgba(44, 94, 173, 0.12);
 
     border: 1px solid #C4E2F5;
     border-radius: 10px;
@@ -473,6 +645,19 @@ body {
 /* --------------------------------------------------
    SPACER
 -------------------------------------------------- */
+
+.section-image {
+    width: 100%;
+    height: 350px;
+
+    display: block;
+    object-fit: cover;
+
+    margin-top: 30px;
+
+    border-radius: 10px;
+}
+
 
 .spacer-lg {
     height: 40px;
