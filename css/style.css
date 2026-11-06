@@ -608,6 +608,24 @@ body {
 
 
 /* --------------------------------------------------
+   EMOJIS (images, so they look the same on every computer)
+-------------------------------------------------- */
+
+.emoji {
+    width: 1.2477em;
+    height: 1.175em;
+
+    margin-bottom: 0.013em;
+
+    vertical-align: -0.245em;
+}
+
+.page-title .emoji {
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+
+/* --------------------------------------------------
    SPACER
 -------------------------------------------------- */
 
